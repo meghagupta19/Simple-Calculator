@@ -1,0 +1,105 @@
+button{
+    font-weight: 700;
+    border-radius: 20px;
+    font-size: 30px;
+}
+body{
+    background-image: url('https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');
+    height: 600px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+   
+    align-items: center;
+    overflow: hidden;
+    justify-content: center;
+}
+#calculator{
+    
+    margin: 10px 20px;   
+    position: relative;
+    top: 30px;
+    background-color:#f4f4f4;
+    height: 300px;
+    
+}
+
+button:hover{
+    box-shadow: 0px 10px 10px 0px black;
+    font-size: 40px;
+}
+h1{
+    text-align: center;
+}
+#container{
+    box-shadow: 0px 20px 20px 0px black;
+    height: 500px;
+    margin: 20px 400px 50px 400px;
+}
+
+@media(max-width:568px){
+    #container{
+        margin: 20px 70px;
+    }
+}
+
+@media(max-width:900px){
+    #container{
+        width: 400px;
+        margin: 20px 50px;
+    }
+}
+
+@media(min-width:900px){
+    #container{
+        width: 500px;
+        
+    }
+}
+
+
+
+#keyboard{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 20px;
+    height: 300px;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+button:nth-child(16){
+   grid-column: 4/5;
+   grid-row: 4/6;
+}
+
+#result{
+    height: 120px;
+}
+
+#history{
+    height: 10px;
+    margin: 0 20px;
+    padding-top: 20px;
+    margin: 10px 20px;
+    text-align: right;
+    font-size: 15px;
+}
+
+#output{
+    height: 50px;
+    text-align: right;
+    font-size: 30px;
+    font-weight: 500;
+}
+#clearsq{
+    background-color: brown;
+}
+button:nth-child(3),button:nth-child(4),button:nth-child(8),button:nth-child(12){
+    color: darkcyan;
+}
+#clear,button:nth-child(16),button:nth-child(17),button:nth-child(19){
+    background-color:lightgray;
+}
